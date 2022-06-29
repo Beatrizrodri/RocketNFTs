@@ -3,6 +3,7 @@
   border: 0;
   box-sizing: border-box;
   font-family: Montserrat;
+  color: var(--text-color);
 }
 
 :root {
@@ -24,14 +25,17 @@
   padding: 60px 82px 0 82px;
 }
 
+/* --------------------------------------NAVBAR */
+
 #navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 90px;
 }
 
-#navbar ul{
+#navbar ul {
   width: 340px;
   display: flex;
   flex-direction: row;
@@ -39,8 +43,8 @@
   justify-content: space-between;
 }
 
-#navbar > ul > li{
-  color: white;
+#navbar > ul > li {
+  color: var(--text-color);
   list-style: none;
   font-weight: 500;
   font-size: 18px;
@@ -58,8 +62,54 @@
 
   font-weight: 700;
   font-size: 16px;
+  color: var(--black-text);
 
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
+}
+
+/* ------------------------------------------presentation-text */
+
+#presentation {
+  height: 245px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#presentation-text > p {
+  width: 400px;
+  margin-bottom: 55px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#artists-img {
+  display: flex;
+  flex-direction: row;
+ }
+
+#artists-text {
+  height: 48px;
+  margin: 25px 0 0px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+}
+
+#artists-text > strong{
+  margin-bottom: 10px;
+}
+
+#main-text {
+  width: 600px;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+#main-text > strong {
+  font-weight: 700;
+  font-size: 50px;
+  color: var(--color-logo);
 }
