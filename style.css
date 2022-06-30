@@ -1,9 +1,11 @@
 *{
   margin: 0;
   border: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: Montserrat;
   color: var(--text-color);
+  font-size: 62.5%;
 }
 
 :root {
@@ -17,12 +19,12 @@
 }
 
 #presentation-container {
-  width: 100vw;
-  height: 940px;
+  width: 100%;
+  height: 100rem;
   background-image: url(./assets/background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 60px 82px 0 82px;
+  padding: 5.2rem 8.2rem 0 8.2rem;
 }
 
 /* --------------------------------------NAVBAR */
@@ -32,11 +34,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 90px;
+  margin-bottom: 9rem;
 }
 
 #navbar ul {
-  width: 340px;
+  width: 34rem;
   display: flex;
   flex-direction: row;
   padding: 0;
@@ -47,42 +49,43 @@
   color: var(--text-color);
   list-style: none;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.8rem;
   cursor: pointer;
 
 }
 
 #navbar > button {
-  width: 230px;
-  height: 50px;
+  width: 23rem;
+  height: 5rem;
   display: flex;
 
   border: none;
   cursor: pointer;
 
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: var(--black-text);
 
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 1rem 2rem;
 }
 
 /* ------------------------------------------presentation-text */
 
 #presentation {
-  height: 245px;
+  height: 24.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10rem;
 }
 
 #presentation-text > p {
-  width: 400px;
-  margin-bottom: 55px;
+  width: 40rem;
+  margin-bottom: 5.5rem;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 #artists-img {
@@ -91,25 +94,46 @@
  }
 
 #artists-text {
-  height: 48px;
-  margin: 25px 0 0px 15px;
+  height: 4.8rem;
+  margin: 2.5rem 0 0 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: initial;
+  font-size: 2rem;
 }
 
 #artists-text > strong{
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 #main-text {
-  width: 600px;
+  width: 60rem;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 5rem;
 }
 
 #main-text > strong {
   font-weight: 700;
-  font-size: 50px;
+  font-size: 5rem;
   color: var(--color-logo);
+}
+
+/* ---------------------------------------picture-boxes */
+
+#picture-boxes {
+  width: 100%;
+  height: 46rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+#picture-boxes > img {
+  border: 0.1rem solid white;
+}
+
+#picture-boxes .first-line{
+  margin-bottom: 6rem;
 }
