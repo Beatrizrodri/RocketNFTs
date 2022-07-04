@@ -208,3 +208,81 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* -----------------------------------------------popular-week */
+
+#popular-week {
+  height: 123.8rem;
+  background-color: var(--body-background);
+  padding: 15rem 9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#title > h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 15.8rem;
+}
+
+#title > h1 > strong {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--color-logo);
+}
+
+#columns {
+  display: flex;
+}
+
+#colum-one {
+  width: 90rem;
+  border-right: 0.1rem solid var(--subtitle-color);
+  flex-direction: column;
+}
+
+.image-cards {
+  width: 36rem;
+  height: 32rem;
+  display: grid;
+  grid-template-areas: 
+  "subtitle arrow"
+  "name span-number"
+  "image image";
+  margin-bottom: 7rem;
+}
+
+.image-cards > h2 {
+  grid-area: subtitle;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+#arrow {
+  grid-area: arrow;
+}
+
+.image-cards > strong {
+  grid-area: span-number;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--color-logo);
+}
+
+.name-artist {
+  grid-area: name;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--subtitle-color);
+}
+
+.astronaut-image {
+  grid-area: image;
+}
+
+#colum-two {
+  width: 90rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
