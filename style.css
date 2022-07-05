@@ -219,13 +219,13 @@
   flex-direction: column;
 }
 
-#title > h1 {
+.title > h1 {
   font-size: 5rem;
   font-weight: 700;
   margin-bottom: 15.8rem;
 }
 
-#title > h1 > strong {
+.title > h1 > strong {
   font-size: 5rem;
   font-weight: 700;
   color: var(--color-logo);
@@ -285,4 +285,71 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+/* --------------------------------------------best-artists */
+
+#best-artists {
+  height: 90rem;
+  padding: 0 9rem 16rem 9rem;
+  background-color: var(--body-background);
+  text-align: center;
+}
+
+#best-artists > .title {
+  width: 100%;
+  margin-bottom: 12rem;
+}
+
+#best-artists-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+
+.artist-container {
+  width: 35rem;
+  height: 15rem;
+  background-color: var(--card-color);
+  align-items: center;
+  padding: 2.5rem 1.8rem 2.5rem 3.2rem;
+  display: grid;
+  grid-template-areas: 
+  "photo artist"
+  "photo jobs";
+}
+
+.artist-container > img {
+  grid-area: photo;
+}
+
+.artist-container > span {
+  grid-area: artist;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.artist-container > strong {
+  grid-area: jobs;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--color-logo);
+}
+
+.row-one {
+  margin-bottom: 11rem;
+}
+
+#see-all {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+#see-all > span {
+  font-size: 2rem;
+  font-weight: 500;
 }
