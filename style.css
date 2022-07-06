@@ -353,3 +353,114 @@
   font-size: 2rem;
   font-weight: 500;
 }
+
+/* ------------------------------------------footer */
+
+#footer {
+  height: 71rem;
+  background-color: var(--card-color);
+}
+
+#back-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 8.2rem 8.8rem 6rem 8rem;
+}
+
+#back-top > button {
+  width: 8rem;
+  height: 8rem;
+  background-color: var(--color-logo);
+}
+
+#contact-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  flex-direction: row;
+  border-top: 0.1rem solid var(--subtitle-color);
+  border-bottom: 0.1rem solid var(--subtitle-color);
+}
+
+#contact {
+  width: 54.4rem;
+  height: 32.4rem;
+  border-right: 0.1rem solid var(--subtitle-color);
+  padding: 6.7rem 5rem 8.2rem 8rem;
+}
+
+#contact > span {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+#contact > span > strong {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--color-logo);
+  margin-bottom: 3rem;
+}
+
+#email-contact {
+  margin-top: 3rem;
+}
+
+#email-contact > input {
+  width: 28rem;
+  height: 6.6rem;
+  background-color: var(--body-background);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--subtitle-color);
+  padding-left: 2rem;
+}
+
+#email-contact > button {
+  width: 12.2rem;
+  height: 6.6rem;
+  background-color: var(--text-color);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--black-text);
+  text-align: center;
+}
+
+/* ---------------------------------------------infos */
+#infos {
+  width: 90rem;
+  height: 32.3rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 0 8rem 12rem;
+}
+
+.infos-lists {
+  display: flex;
+  flex-direction: row;
+}
+
+.infos-lists > ul > li {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--subtitle-color);
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8rem 8.8rem 0 8.8rem;
+}
+
+footer > span {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--subtitle-color);
+}
+
+footer > #social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
