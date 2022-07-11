@@ -93,25 +93,34 @@ html {
 }
 
 #artists-img {
-  display: flex;
-  flex-direction: row;
+  width: 37rem;
+  height: 8.7rem;
+  font-size: 2rem;
+  align-items: center;
+  display: grid;
+  grid-template-areas: 
+  "images numbers"
+  "images text";
  }
 
-#artists-text {
-  height: 4.8rem;
-  margin: 2.5rem 0 0 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: initial;
-  font-size: 2rem;
-}
+ #artists-img > img {
+   grid-area: images;
+ }
 
-#artists-text > strong{
-  margin-bottom: 1rem;
+ #artists-img > span > strong {
+   grid-area: numbers;
+   font-size: 1.8rem;
+   font-weight: 700;
+ }
+
+ #artists-img > span {
+  grid-area: text;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 #main-text {
-  width: 60rem;
+  width: 59rem;
   font-weight: 700;
   font-size: 5rem;
 }
@@ -262,7 +271,7 @@ html {
   font-weight: 500;
 }
 
-.image-cards > #arrow , strong {
+.image-cards > #arrow , .strong-text {
   justify-self: end;
 }
 
