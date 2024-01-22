@@ -1,4 +1,4 @@
-# Nfts
+# NFTS
 
 <img src="./navbar.png"/>
 
