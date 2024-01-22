@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   border: 0;
   padding: 0;
@@ -15,11 +15,11 @@
   --text-color: #fff;
   --subtitle-color: #5a5757;
   --black-text: #000;
-  --color-input: #0D0D0D;
+  --color-input: #0d0d0d;
 }
 
-html { 
-  scroll-behavior: smooth; 
+html {
+  scroll-behavior: smooth;
 }
 
 #presentation-container {
@@ -30,8 +30,6 @@ html {
   background-size: cover;
   padding: 5.2rem 8.2rem 0 8.2rem;
 }
-
-/* --------------------------------------NAVBAR */
 
 #navbar {
   display: flex;
@@ -55,7 +53,6 @@ html {
   font-weight: 500;
   font-size: 1.8rem;
   cursor: pointer;
-
 }
 
 #navbar > button {
@@ -75,7 +72,11 @@ html {
   padding: 1rem 2rem;
 }
 
-/* ------------------------------------------presentation-text */
+.logo {
+  font-weight: 600;
+  font-size: 6rem;
+  color: #ff5b50;
+}
 
 #presentation {
   height: 24.5rem;
@@ -98,22 +99,22 @@ html {
   font-size: 2rem;
   align-items: center;
   display: grid;
-  grid-template-areas: 
-  "images numbers"
-  "images text";
- }
+  grid-template-areas:
+    'images numbers'
+    'images text';
+}
 
- #artists-img > img {
-   grid-area: images;
- }
+#artists-img > img {
+  grid-area: images;
+}
 
- #artists-img > span > strong {
-   grid-area: numbers;
-   font-size: 1.8rem;
-   font-weight: 700;
- }
+#artists-img > span > strong {
+  grid-area: numbers;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
 
- #artists-img > span {
+#artists-img > span {
   grid-area: text;
   font-size: 1.8rem;
   font-weight: 500;
@@ -131,8 +132,6 @@ html {
   color: var(--color-logo);
 }
 
-/* ------------------------------------------------picture-boxes */
-
 #picture-boxes {
   width: 100%;
   height: 46rem;
@@ -147,20 +146,18 @@ html {
   border: 0.1rem solid white;
 }
 
-#picture-boxes .first-line{
+#picture-boxes .first-line {
   margin-bottom: 6rem;
 }
-
-/* -------------------------------------------------second-part */
 
 #second-part {
   width: 100%;
   height: 66rem;
   background-color: var(--body-background);
   display: grid;
-  grid-template-areas: 
-  "numbers text"
-  "numbers image";
+  grid-template-areas:
+    'numbers text'
+    'numbers image';
 }
 
 #numbers {
@@ -173,13 +170,13 @@ html {
   border-right: 0.1rem solid var(--card-color);
 }
 
-#numbers > strong{
+#numbers > strong {
   font-size: 5rem;
   font-weight: 500;
   margin-bottom: 0.8rem;
 }
 
-#numbers > span{
+#numbers > span {
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 7rem;
@@ -195,7 +192,7 @@ html {
   padding: 0 9rem;
 }
 
-.text-content > p{
+.text-content > p {
   width: 50rem;
   flex-wrap: wrap;
   font-size: 1.8rem;
@@ -203,13 +200,13 @@ html {
   margin-bottom: 6rem;
 }
 
-.text-content > p > a{
+.text-content > p > a {
   font-size: 1.8rem;
   font-weight: 500;
   color: var(--color-logo);
 }
 
-.text-content > a{
+.text-content > a {
   font-size: 1.8rem;
   font-weight: 500;
 }
@@ -221,8 +218,6 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-/* -----------------------------------------------popular-week */
 
 #popular-week {
   height: 123.8rem;
@@ -258,10 +253,10 @@ html {
   width: 36rem;
   height: 32rem;
   display: grid;
-  grid-template-areas: 
-  "subtitle arrow"
-  "name span-number"
-  "image image";
+  grid-template-areas:
+    'subtitle arrow'
+    'name span-number'
+    'image image';
   margin-bottom: 7rem;
 }
 
@@ -271,7 +266,8 @@ html {
   font-weight: 500;
 }
 
-.image-cards > #arrow , .strong-text {
+.image-cards > #arrow,
+.strong-text {
   justify-self: end;
 }
 
@@ -304,8 +300,6 @@ html {
   align-items: flex-end;
 }
 
-/* --------------------------------------------best-artists */
-
 #best-artists {
   height: 90rem;
   padding: 0 9rem 16rem 9rem;
@@ -332,9 +326,9 @@ html {
   align-items: center;
   padding: 2.5rem 1.8rem 2.5rem 3.2rem;
   display: grid;
-  grid-template-areas: 
-  "photo artist"
-  "photo jobs";
+  grid-template-areas:
+    'photo artist'
+    'photo jobs';
 }
 
 .artist-container > img {
@@ -354,11 +348,11 @@ html {
   color: var(--color-logo);
 }
 
-.artist-container:hover{
+.artist-container:hover {
   background-color: var(--color-logo);
 }
 
-.artist-container:hover > strong{
+.artist-container:hover > strong {
   color: var(--text-color);
 }
 
@@ -378,8 +372,6 @@ html {
   font-size: 2rem;
   font-weight: 500;
 }
-
-/* ------------------------------------------footer */
 
 #footer {
   height: 71rem;
@@ -450,7 +442,6 @@ html {
   text-align: center;
 }
 
-/* ---------------------------------------------infos */
 #infos {
   width: 90rem;
   height: 32.3rem;
